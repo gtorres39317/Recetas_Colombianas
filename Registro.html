@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/registro.css">
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/registro.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- EstiloHeader    -->
+	<link href="css/headers.css" rel="stylesheet">
+	<!-- Estilo Navbar-->
+	<link href="css/navbar.css" rel="stylesheet">
+
+</head>
+<body>
+  <main>
+    <!-- Navbar -->
+		<nav class="navbar navbar-light bg-light">
+			<div class="container-fluid">
+				<a href="index.html"
+					class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+
+					<img src="img/cocinero.png" alt="" width="40" height="32" class="d-inline-block align-text-top">
+					<strong>CocinaColombiana</strong>
+				</a>
+				<!--Elementos del navbar con menu desplegable que funciona con JavaScritp-->
+				<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+					<li><a href="index.html" class="nav-link px-2 link-dark">Inicio</a></li>
+					<li><a href="recetas.html" class="nav-link px-2 link-dark">Recetas</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown"
+							aria-expanded="false">Categorias</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdown10">
+							<li><a class="dropdown-item" href="#">Desayuno</a></li>
+							<li><a class="dropdown-item" href="#">Alamuerzo</a></li>
+							<li><a class="dropdown-item" href="#">Recetas Saludables</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="nav-link px-2 link-dark">Sobre Nosotros</a></li>
+					<li><a href="#" class="nav-link px-2 link-dark">Contactanos</a></li>
+					<li><a href="Registro.html" class="nav-link px-2 link-dark">Registrate</a></li>
+					<li><a href="login.html" class="nav-link px-2 link-dark">Ingresa</a></li>
+				</ul>
+			</div>
+		</nav>
+    <section class="form-register">
+      <h4>Formulario Registro</h4>
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+      <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+      <input class="controls" type="password" name="correo" id="correo" placeholder="Repita la contraseña">
+      <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+      <input class="botons" type="submit" value="Registrar">
+      <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </section>
+
+  </main>
+  <!--Agregamos scrip para que invoque A JavaScrip-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
