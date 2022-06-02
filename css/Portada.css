@@ -9,3 +9,14 @@
 
 
 }
+#portada2 {
+    background: url("../img/8.jpg") no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+    width: 1810px;
+
+
+}
