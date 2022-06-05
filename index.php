@@ -123,7 +123,7 @@
         <div class="container" class="u-body u-xl-mode">
             <header
                 class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-                <a href="index.html"
+                <a href="index.php"
                     class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                     <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                         <use xlink:href="#bootstrap" />
@@ -133,8 +133,8 @@
                 </a>
                 <!--Elementos del navbar con menu desplegable que funciona con JavaScritp-->
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
-                    <li><a href="Recetas.html" class="nav-link px-2 link-dark">Recetas</a></li>
+                    <li><a href="index.php" class="nav-link px-2 link-secondary">Inicio</a></li>
+                    <li><a href="recetas.html" class="nav-link px-2 link-dark">Recetas</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown"
                             aria-expanded="false">Categorias</a>
@@ -145,9 +145,9 @@
                         </ul>
                     </li>
                     <li><a href="#" class="nav-link px-2 link-dark">Sobre Nosotros</a></li>
-                    <li><a href="Contacto.html" class="nav-link px-2 link-dark">Contactanos</a></li>
-                    <li><a href="Registro.html" class="nav-link px-2 link-dark">Registrate</a></li>
-                    <li><a href="login.html" class="nav-link px-2 link-dark">Ingresa</a></li>
+                    <li><a href="Contacto.php" class="nav-link px-2 link-dark">Contactanos</a></li>
+                    <li><a href="Registro.php" class="nav-link px-2 link-dark">Registrate</a></li>
+                    <li><a href="login.php" class="nav-link px-2 link-dark">Ingresa</a></li>
                 </ul>
                 <!--<div class="col-md-3 text-end">
                     <button type="button" class="btn btn-outline-primary me-2">Ingresa</button>
@@ -182,7 +182,7 @@
                                     class="u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-md u-align-right-xl u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
                                     <div
                                         class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-container-layout-2">
-                                        <a href="Registro.html"
+                                        <a href="Registro.php"
                                             class="u-btn u-btn-round u-button-style u-palette-4-base u-radius-50 u-text-body-alt-color u-btn-1">Registrate</a>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@
                                     class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
                                     <div
                                         class="u-container-layout u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-valign-top-sm u-valign-top-xs u-container-layout-3">
-                                        <a href="login.html"
+                                        <a href="login.php"
                                             class="u-active-palette-1-base u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-white u-btn u-btn-round u-button-style u-hover-palette-1-base u-radius-50 u-text-active-white u-text-hover-white u-text-palette-1-dark-2 u-white u-btn-2">
                                             Ingresa Aquí
                                         </a>
@@ -217,7 +217,7 @@
                                 <div
                                     class="u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-1">
                                     <div class="u-container-layout u-similar-container u-container-layout-1">
-                                        <a href="BandejaPaisa.html" class="nav-link px-2 link-dark">
+                                        <a href="Recetas/BandejaPaisa.html" class="nav-link px-2 link-dark">
                                             <img class="u-image u-image-default u-image-1" src="img/bandejapaisa.png"
                                                 alt="" data-image-width="908" data-image-height="864">
                                             <h5
@@ -238,7 +238,7 @@
                                 <div
                                     class="u-container-style u-list-item u-radius-50 u-repeater-item u-shape-round u-white u-list-item-2">
                                     <div class="u-container-layout u-similar-container u-container-layout-2">
-                                        <a href="Ajiaco.html" class="nav-link px-2 link-dark">
+                                        <a href="Recetas/Ajiaco.html" class="nav-link px-2 link-dark">
                                             <img class="u-image u-image-default u-image-2" src="img/ajiaco.png" alt=""
                                                 data-image-width="880" data-image-height="877">
                                             <h5
@@ -410,11 +410,27 @@
         <div class="container">
             <div class="center">
 
-                <h2>Aqui va el Contador de visitas</h2>
+                <h2>Suma tu visita!</h2>
+
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Contador</title>
+                <link rel="stylesheet" href="style.css">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
 
+                <div class="contenedor">
+                    <p class="contar" id="contar">0</p>
 
+                    <div class="botones">
+                        <button class="incr" id="incr"><span class="material-icons-round">add</span></button>
+                        <button class="decr" id="decr"><span class="material-icons-round">remove</span></button>
+                        <button class="reset" id="reset"><span class="material-icons-round">cached</span></button>
+                    </div>
+                </div>
 
+                
 
             </div>
 
@@ -437,7 +453,7 @@
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre Nosotros</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Precios</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                    <li class="nav-item"><a href="Contacto.html" class="nav-link px-2 text-muted">Contactanos</a></li>
+                    <li class="nav-item"><a href="Contacto.php" class="nav-link px-2 text-muted">Contactanos</a></li>
                 </ul>
             </footer>
         </div>
@@ -449,11 +465,14 @@
 
 
     </main>
+    
+
     <!--Agregamos scrip para que invoque A JavaScrip y funcione el carrusel-->
     <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <!--Agregamos scrip para que invoque A JavaScrip-->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 

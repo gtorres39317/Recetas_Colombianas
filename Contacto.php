@@ -27,26 +27,27 @@
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i">
+    <!--Script google maps-->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8cBTmYLQkdRtCXffX2MOqM9ows2wIiNc&callback=initMap" type="text/javascript"></script>
+    <script src="./js/maps.js"></script>
+    <!--script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.gomap-1.3.3.min.js"></script-->
 </head>
 
 <body>
     <main>
         <!-- Navbar -->
         <div class="container" class="u-body u-xl-mode">
-            <header
-                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-                <a href="index.html"
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <a href="index.php"
                     class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap" />
-                    </svg>-->
                     <img src="img/cocinero.png" alt="" width="40" height="32" class="d-inline-block align-text-top">
                     <strong>CocinaColombiana</strong>
                 </a>
                 <!--Elementos del navbar con menu desplegable que funciona con JavaScritp-->
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
-                    <li><a href="Recetas.html" class="nav-link px-2 link-dark">Recetas</a></li>
+                    <li><a href="index.php" class="nav-link px-2 link-secondary">Inicio</a></li>
+                    <li><a href="recetas.html" class="nav-link px-2 link-dark">Recetas</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown"
                             aria-expanded="false">Categorias</a>
@@ -57,14 +58,10 @@
                         </ul>
                     </li>
                     <li><a href="#" class="nav-link px-2 link-dark">Sobre Nosotros</a></li>
-                    <li><a href="Contacto.html" class="nav-link px-2 link-dark">Contactanos</a></li>
-                    <li><a href="Registro.html" class="nav-link px-2 link-dark">Registrate</a></li>
-                    <li><a href="login.html" class="nav-link px-2 link-dark">Ingresa</a></li>
+                    <li><a href="Contacto.php" class="nav-link px-2 link-dark">Contactanos</a></li>
+                    <li><a href="Registro.php" class="nav-link px-2 link-dark">Registrate</a></li>
+                    <li><a href="login.php" class="nav-link px-2 link-dark">Ingresa</a></li>
                 </ul>
-                <!--<div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-outline-primary me-2">Ingresa</button>
-                    <button type="button" class="btn btn-success">Registrate</button>
-                </div>-->
             </header>
         </div>
         <div id="portada2" alt="Imagen genérica"
@@ -90,6 +87,7 @@
             </section>
 
         </div>
+        <!--Contenedor de Contactenos-->
         <div class="container">
             <section class="u-clearfix u-section-1" id="carousel_5f96">
                 <div class="u-clearfix u-sheet u-sheet-1">
@@ -99,30 +97,17 @@
                             <p class="u-text u-text-2">Somos un equipo de desarrolladores de la Univesidad EAN.</p>
                         </div>
                     </div>
+
+                    <!--Contenedor de Google Maps-->
                     <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
                         <div class="u-layout">
                             <div class="u-layout-col">
                                 
                                 <div class="u-size-38 u-size-60-md">
                                     <div class="u-layout-col">
-                                        <div
-                                            class="u-align-left u-container-style u-layout-cell u-left-cell u-right-cell u-size-60 u-layout-cell-1">
+                                        <div class="u-align-left u-container-style u-layout-cell u-left-cell u-right-cell u-size-60 u-layout-cell-1 ">
                                             <div class="u-container-layout u-container-layout-2">
-                                                <div class="u-align-left u-border-2 u-expanded u-hover-feature u-map u-grey-10 u-map-1"
-                                                    data-animation-name="" data-animation-duration="0"
-                                                    data-animation-direction="">
-
-                                                    <!--Aqui va el MASHUP DE GOOGLE MAPS-->
-                                                    <!--Aqui va el MASHUP DE GOOGLE MAPS-->
-
-                                                    <div class="embed-responsive">
-                                                        <iframe class="embed-responsive-item"
-                                                            src="https://www.google.com/maps?output=embed&amp;key=151820057142&amp;q=Universidad%20Ean%20Sede%20Calle%2071&amp;t=m"
-                                                            data-map="!4m5!3m4!1s0x0:0xd324b33f50c43aa8!8m2!3d4.6555538!4d-74.0580349">
-                                                        </iframe>
-                                                    </div>
-                                                         <!--FIN DEL MASHUP-->
-                                                        <!--FIN DEL MASHUP-->
+                                                <div class="u-align-left u-border-2 u-expanded u-hover-feature u-map u-grey-10 u-map-1" data-animation-name="" data-animation-duration="0" data-animation-direction="" id="map">
 
                                                 </div>
                                             </div>
@@ -130,7 +115,7 @@
                                     </div>
                                 </div>
                             
-
+                                <!--Informacion de contacto-->
 
                                 <div class="u-size-22 u-size-60-md">
                                     <div class="u-layout-row">
@@ -138,13 +123,14 @@
                                             class="u-align-left u-container-style u-grey-5 u-layout-cell u-left-cell u-size-30 u-layout-cell-2">
                                             <div class="u-container-layout u-valign-top u-container-layout-3">
                                                 <h3 class="u-text u-text-3">Cocina Colombiana</h3>
-                                                <p class="u-text u-text-4"> Cl. 71 ###9 - 84, Bogotá, Cundinamarca</p>
+                                                <p class="u-text u-text-4"> Cra 11 #78 - 47, Bogotá, Colombia</p>
                                                 <p class="u-text u-text-5">+57 3112349671</p>
                                                 <p class="u-text u-text-6">
                                                     <a href="mailto:contacts@esbnyc.com">cocinacolcontacto@gmail.com</a>
                                                 </p>
                                             </div>
                                         </div>
+                                        <!--Integrantes-->
                                         <div
                                             class="u-align-left u-container-style u-layout-cell u-palette-3-base u-right-cell u-size-30 u-layout-cell-3">
                                             <div class="u-container-layout u-valign-top u-container-layout-4">
@@ -228,7 +214,7 @@
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sobre Nosotros</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Precios</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                    <li class="nav-item"><a href="Contacto.html" class="nav-link px-2 text-muted">Contactanos</a></li>
+                    <li class="nav-item"><a href="Contacto.php" class="nav-link px-2 text-muted">Contactanos</a></li>
                 </ul>
             </footer>
         </div>

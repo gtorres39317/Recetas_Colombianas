@@ -22,7 +22,7 @@
 		<!-- Navbar -->
 		<nav class="navbar navbar-light bg-light">
 			<div class="container-fluid">
-				<a href="index.html"
+				<a href="index.php"
 					class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
 
 					<img src="img/cocinero.png" alt="" width="40" height="32" class="d-inline-block align-text-top">
@@ -30,7 +30,7 @@
 				</a>
 				<!--Elementos del navbar con menu desplegable que funciona con JavaScritp-->
 				<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-					<li><a href="index.html" class="nav-link px-2 link-dark">Inicio</a></li>
+					<li><a href="index.php" class="nav-link px-2 link-dark">Inicio</a></li>
 					<li><a href="Recetas.html" class="nav-link px-2 link-dark">Recetas</a></li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown"
@@ -42,9 +42,9 @@
 						</ul>
 					</li>
 					<li><a href="#" class="nav-link px-2 link-dark">Sobre Nosotros</a></li>
-					<li><a href="Contacto.html" class="nav-link px-2 link-dark">Contactanos</a></li>
-					<li><a href="Registro.html" class="nav-link px-2 link-dark">Registrate</a></li>
-					<li><a href="login.html" class="nav-link px-2 link-dark">Ingresa</a></li>
+					<li><a href="Contacto.php" class="nav-link px-2 link-dark">Contactanos</a></li>
+					<li><a href="Registro.php" class="nav-link px-2 link-dark">Registrate</a></li>
+					<li><a href="login.php" class="nav-link px-2 link-dark">Ingresa</a></li>
 				</ul>
 			</div>
 		</nav>
